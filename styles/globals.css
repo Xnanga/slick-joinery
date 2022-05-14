@@ -1,3 +1,18 @@
+:root {
+  --color-white-default: #ffffff;
+  --color-black-default: #000000;
+  --color-grey-default: #ced2d8;
+  --color-yellow-default: #ffd400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +28,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
 }

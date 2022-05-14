@@ -1,0 +1,143 @@
+.global-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 10%;
+
+  width: 100%;
+  height: 15rem;
+
+  background-color: var(--color-white-default);
+  background: linear-gradient(
+    180deg,
+    rgba(232, 232, 232, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(232, 232, 232, 1) 100%
+  );
+
+  border-bottom: 3px solid var(--color-yellow-default);
+}
+
+.global-header__logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12.5rem;
+  width: 17.5rem;
+}
+
+.global-header__logo-img {
+  cursor: pointer;
+}
+
+.global-header__navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 7.5rem;
+  margin-left: auto;
+}
+
+.global-header__navigation-list {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  width: 100%;
+
+  font-size: 1.6rem;
+}
+
+.global-header__navigation-list
+  > .global-header__navigation-list-item:not(:first-child) {
+  margin-left: 3rem;
+}
+
+.global-header__navigation-list-item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 12.5rem;
+
+  list-style-type: none;
+
+  font-weight: 700;
+
+  color: var(--color-black-default);
+
+  transition: all 0.1s;
+}
+
+.global-header__navigation-list-item > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.global-header__navigation-list-item::before {
+  content: "¬";
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  opacity: 0;
+
+  transform: scale(-1, 1);
+
+  transition: all 0.4s;
+}
+
+.global-header__navigation-list-item::after {
+  content: "¬";
+
+  position: absolute;
+  bottom: 40%;
+  right: 50%;
+
+  opacity: 0;
+
+  transform: scale(1, -1);
+
+  transition: all 0.4s;
+}
+
+.global-header__navigation-list-item:hover {
+  background-color: var(--color-yellow-default);
+}
+
+.global-header__navigation-list-item:hover::before {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+
+  opacity: 1;
+}
+
+.global-header__navigation-list-item:hover::after {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+
+  opacity: 1;
+}
+
+.global-header__cta {
+  margin-left: 5rem;
+}
