@@ -29,9 +29,6 @@ const GlobalHeader = (props) => {
             <Link href="/about">About</Link>
           </li>
           <li className={styles["global-header__navigation-list-item"]}>
-            <Link href="/contact-us">Contact Us</Link>
-          </li>
-          <li className={styles["global-header__navigation-list-item"]}>
             <Link href="/blog">Blog</Link>
           </li>
         </ul>

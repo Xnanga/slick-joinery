@@ -1,0 +1,5 @@
+.services-section {
+  grid-column: 2 / 8;
+
+  height: 100vh;
+}
