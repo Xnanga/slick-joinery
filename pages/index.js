@@ -10,7 +10,7 @@ export default function Home() {
         buttonText="Give us ring"
         videoSrc="../video/stock-video.webm"
       />
-      <ServicesHighlightSection />
+      <ServicesHighlightSection title={"Popular Services"} />
     </>
   );
 }

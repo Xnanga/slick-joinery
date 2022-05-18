@@ -33,6 +33,10 @@ body {
   margin: 0;
 }
 
+section {
+  background-color: var(--color-white-default);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -52,12 +56,4 @@ button {
   color: inherit;
   font: inherit;
   line-height: normal;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  white-space: nowrap;
 }

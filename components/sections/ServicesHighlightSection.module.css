@@ -1,5 +1,18 @@
 .services-section {
   grid-column: 2 / 8;
-
+  text-align: center;
   height: 100vh;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 93.75em) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }

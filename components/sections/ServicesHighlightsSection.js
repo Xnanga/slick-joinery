@@ -1,10 +1,60 @@
+import Image from "next/image";
+
 import styles from "./ServicesHighlightSection.module.css";
+
+import ServiceCard from "../ui/cards/ServiceCard";
 
 const ServicesHighlightSection = (props) => {
   return (
     <section className={styles["services-section"]}>
-      <h2>Our Services</h2>
-      <p>These are highlights of our services, take a look.</p>
+      <h2>{props.title}</h2>
+      <div className={styles["services-grid"]}>
+        <ServiceCard
+          positionNum="1"
+          imgSrc={"/png/placeholder.jpg"}
+          imgAlt={"TEST"}
+          imgHeight={150}
+          imgWidth={150}
+          title="Joinery"
+          description="This is the description of the service we provide."
+        />
+        <ServiceCard
+          positionNum="2"
+          imgSrc={"/png/placeholder.jpg"}
+          imgAlt={"TEST"}
+          imgHeight={150}
+          imgWidth={150}
+          title="Building Work"
+          description="This is the description of the service we provide."
+        />
+        <ServiceCard
+          positionNum="3"
+          imgSrc={"/png/placeholder.jpg"}
+          imgAlt={"TEST"}
+          imgHeight={150}
+          imgWidth={150}
+          title="Loft Conversions"
+          description="This is the description of the service we provide."
+        />
+        <ServiceCard
+          positionNum="4"
+          imgSrc={"/png/placeholder.jpg"}
+          imgAlt={"TEST"}
+          imgHeight={150}
+          imgWidth={150}
+          title="Conservatories"
+          description="This is the description of the service we provide."
+        />
+        <ServiceCard
+          positionNum="5"
+          imgSrc={"/png/placeholder.jpg"}
+          imgAlt={"TEST"}
+          imgHeight={150}
+          imgWidth={150}
+          title="Extensions"
+          description="This is the description of the service we provide."
+        />
+      </div>
     </section>
   );
 };
