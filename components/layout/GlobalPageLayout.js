@@ -2,6 +2,7 @@ import styles from "./GlobalPageLayout.module.css";
 
 import GlobalHeader from "./GlobalHeader";
 import CallToActionButton from "../ui/buttons/CallToActionButton";
+import GlobalFooter from "./GlobalFooter";
 
 const GlobalPageLayout = (props) => {
   return (
@@ -11,6 +12,7 @@ const GlobalPageLayout = (props) => {
         callToActionComponent={<CallToActionButton buttonText="Get in Touch" />}
       />
       {props.children}
+      <GlobalFooter />
     </div>
   );
 };

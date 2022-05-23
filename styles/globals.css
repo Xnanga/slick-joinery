@@ -6,6 +6,8 @@
   --color-white-default: #ffffff;
   --color-black-default: #000000;
   --color-grey-default: #ced2d8;
+  --color-dark-grey-default: #383637;
+  --color-darker-grey-default: #1f1e1f;
   --color-yellow-default: #ffd400;
 
   --font-default-style: "Montserrat", sans-serif;
@@ -15,6 +17,7 @@
 
 /* Largest: 1,500px | 93.75em */
 /* Large: 1,100px | 68.75em */
+/* Medium : 800px | 50em */
 
 /* Reset & Defaults */
 
@@ -25,6 +28,7 @@ html {
 body {
   font-family: var(--font-default-style);
   font-size: 1.6rem;
+  color: var(--color-dark-grey-default);
 }
 
 html,
