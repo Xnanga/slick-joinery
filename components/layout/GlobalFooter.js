@@ -1,6 +1,7 @@
 import styles from "./GlobalFooter.module.css";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const GlobalFooter = (props) => {
   return (
@@ -20,11 +21,21 @@ const GlobalFooter = (props) => {
       >
         <h3>Services</h3>
         <ul className={styles["footer-column__list"]}>
-          <li>Joinery Work</li>
-          <li>Building Work</li>
-          <li>Loft Conversions</li>
-          <li>Conservatories</li>
-          <li>Extensions</li>
+          <li>
+            <Link href="#">Joinery Work</Link>
+          </li>
+          <li>
+            <Link href="#">Building Work</Link>
+          </li>
+          <li>
+            <Link href="#">Loft Conversions</Link>
+          </li>
+          <li>
+            <Link href="#">Conservatories</Link>
+          </li>
+          <li>
+            <Link href="#">Extensions</Link>
+          </li>
         </ul>
       </div>
       <div
@@ -43,16 +54,58 @@ const GlobalFooter = (props) => {
       >
         <h3>Connect with Us</h3>
         <ul className={styles["footer-column__list"]}>
-          <li>RatedPeople</li>
-          <li>TrustATrader</li>
-          <li>Facebook</li>
-          <li>LinkedIn</li>
+          <li>
+            <a href="#">RatedPeople</a>
+          </li>
+          <li>
+            <a href="#">TrustATrader</a>
+          </li>
+          <li>
+            <a href="#">Facebook</a>
+          </li>
+          <li>
+            <a href="#">LinkedIn</a>
+          </li>
         </ul>
       </div>
       <div className={styles["footer-bar"]}>
         <span className={styles["footer-bar__text"]}>
           © Slick Joinery | 2022
         </span>
+        <div className={styles["footer-bar__icon-container"]}>
+          <a href="#">
+            <Image
+              src="/png/facebook-icon.png"
+              alt="The Slick Joinery Logo"
+              width={25}
+              height={25}
+            />
+          </a>
+          <a href="#">
+            <Image
+              src="/png/twitter-icon.png"
+              alt="The Slick Joinery Logo"
+              width={25}
+              height={25}
+            />
+          </a>
+          <a href="#">
+            <Image
+              src="/png/instagram-icon.png"
+              alt="The Slick Joinery Logo"
+              width={25}
+              height={25}
+            />
+          </a>
+          <a href="#">
+            <Image
+              src="/png/linkedin-icon.png"
+              alt="The Slick Joinery Logo"
+              width={25}
+              height={25}
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );

@@ -15,6 +15,10 @@
   background-color: var(--color-darker-grey-default);
 }
 
+.footer a:hover {
+  color: var(--color-yellow-default);
+}
+
 .footer-column {
   padding-left: 1.5rem;
 }
@@ -44,12 +48,26 @@
 .footer-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
-  grid-column: 1/-1;
+  grid-column: 2/6;
   grid-row: 2/3;
 }
 
 .footer-bar__text {
   opacity: 0.65;
+}
+
+.footer-bar__icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  min-width: 15rem;
+  height: 100%;
+  margin-left: auto;
+}
+
+.footer-bar__icon-container > img {
+  cursor: pointer;
 }

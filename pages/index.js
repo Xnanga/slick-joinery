@@ -8,7 +8,7 @@ export default function Home() {
         titleText={"Scotland's Premier Joiners"}
         taglineText={"Whatever the job, big or small, we have you covered."}
         buttonText="Give us ring"
-        videoSrc="../video/stock-video.webm"
+        videoSrc="../video/man-sawing-wood.webm"
       />
       <ServicesHighlightSection title={"Popular Services"} />
     </>
