@@ -1,4 +1,4 @@
-import styles from "./ServicesHighlightSection.module.css";
+import styles from "./ServicesHighlightsSection.module.css";
 
 import ServiceCard from "../ui/cards/ServiceCard";
 
