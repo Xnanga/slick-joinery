@@ -9,6 +9,7 @@ const ServiceCard = (props) => {
 
   return (
     <div
+      data-testid="service-card"
       className={`${styles["service-card"]} ${determineGridPosition(
         props.positionNum
       )}`}

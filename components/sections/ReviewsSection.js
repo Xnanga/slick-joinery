@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./ReviewsSection.module.css";
 
-const determineStarPercentageHighlight = (starRating, maxStarRating) => {
+export const determineStarPercentageHighlight = (starRating, maxStarRating) => {
   if (starRating > maxStarRating) {
     console.error(
       "Star rating cannot be higher than max star rating in reviews widget."
@@ -40,8 +40,9 @@ const ReviewsSection = (props) => {
           </span>
           <div className={styles["reviews-section__rating-stars"]}>
             <div
+              data-testid="stars-highlight-container"
               className={styles["reviews-section__rating-stars-highlight"]}
-              style={{ width: `${starsHighlightPercentage}%` }}
+              style={{ width: `${starsHighlightPercentage || 100}%` }}
             ></div>
             <Image
               className={styles["reviews-section__rating-star-icon"]}
